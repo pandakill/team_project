@@ -1,0 +1,32 @@
+/* 
+* @Author: anchen
+* @Date:   2015-07-04 17:27:53
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-07-29 12:29:56
+*/
+.profile .profile-image {
+    margin: 0 auto 10px;
+    text-align: center;
+    width: 100px;
+    position: relative;
+    float: none;
+}
+.avatar_mask{
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    border-radius: 20%;
+    height: 100%;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    display: none;
+    cursor: pointer;
+}
+/*.avatar_mask > span{
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 42px;
+}*/

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <!-- META SECTION -->
+        <title>Joli Admin - Responsive Bootstrap Admin Template</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <!-- END META SECTION -->
+        
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+        <!-- EOF CSS INCLUDE -->                                     
+    </head>
+    <body>
+        <!-- START PAGE CONTAINER -->
+        <div class="page-container page-navigation-toggled">
+            
+            <!-- START PAGE SIDEBAR -->
+            <div class="page-sidebar">
+                <!-- START X-NAVIGATION -->
+                <ul class="x-navigation">
+                    <li class="xn-logo">
+                        <a href="index.html">Joli Admin</a>
+                        <a href="#" class="x-navigation-control"></a>
+                    </li>
+                    <li class="xn-profile">
+                        <a href="#" class="profile-mini">
+                            <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
+                        </a>
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
+                            </div>
+                            <div class="profile-data">
+                                <div class="profile-data-name">John Doe</div>
+                                <div class="profile-data-title">Web Developer/Designer</div>
+                            </div>
+                            <div class="profile-controls">
+                                <a href="pages-profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
+                                <a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>                                                                        
+                    </li>
+                    <li class="xn-title">Navigation</li>
+                    <li>
+                        <a href="index.html"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>                        
+                    </li>
+                    <li class="xn-openable active">
+                        <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">Pages</span></a>
+                        <ul>
+                            <li><a href="pages-gallery.html"><span class="fa fa-image"></span> Gallery</a></li>
+                            <li><a href="pages-profile.html"><span class="fa fa-user"></span> Profile</a></li>
+                            <li><a href="pages-address-book.html"><span class="fa fa-users"></span> Address Book</a></li>
+                            <li class="xn-openable">
+                                <a href="#"><span class="fa fa-clock-o"></span> Timeline</a>
+                                <ul>
+                                    <li><a href="pages-timeline.html"><span class="fa fa-align-center"></span> Default</a></li>
+                                    <li><a href="pages-timeline-simple.html"><span class="fa fa-align-justify"></span> Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li class="xn-openable">
+                                <a href="#"><span class="fa fa-envelope"></span> Mailbox</a>
+                                <ul>
+                                    <li><a href="pages-mailbox-inbox.html"><span class="fa fa-inbox"></span> Inbox</a></li>
+                                    <li><a href="pages-mailbox-message.html"><span class="fa fa-file-text"></span> Message</a></li>
+                                    <li><a href="pages-mailbox-compose.html"><span class="fa fa-pencil"></span> Compose</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="pages-messages.html"><span class="fa fa-comments"></span> Messages</a></li>
+                            <li><a href="pages-calendar.html"><span class="fa fa-calendar"></span> Calendar</a></li>
+                            <li class="active"><a href="pages-tasks.html"><span class="fa fa-edit"></span> Tasks</a></li>
+                            <li><a href="pages-content-table.html"><span class="fa fa-columns"></span> Content Table</a></li>
+                            <li><a href="pages-faq.html"><span class="fa fa-question-circle"></span> FAQ</a></li>
+                            <li><a href="pages-search.html"><span class="fa fa-search"></span> Search</a></li>
+                            <li class="xn-openable">
+                                <a href="#"><span class="fa fa-file"></span> Blog</a>
+                                
+                                <ul>                                    
+                                    <li><a href="pages-blog-list.html"><span class="fa fa-copy"></span> List of Posts</a></li>
+                                    <li><a href="pages-blog-post.html"><span class="fa fa-file-o"></span>Single Post</a></li>
+                                </ul>
+                            </li>
+                            <li class="xn-openable">
+                                <a href="#"><span class="fa fa-sign-in"></span> Login</a>
+                                <ul>                                    
+                                    <li><a href="pages-login.html">App Login</a></li>
+                                    <li><a href="pages-login-website.html">Website Login</a></li>
+                                    <li><a href="pages-login-website-light.html"> Website Login Light</a></li>
+                                </ul>
+                            </li>                            
+                            <li class="xn-openable">
+                                <a href="#"><span class="fa fa-warning"></span> Error Pages</a>
+                                <ul>                                    
+                                    <li><a href="pages-error-404.html">Error 404 Sample 1</a></li>
+                                    <li><a href="pages-error-404-2.html">Error 404 Sample 2</a></li>
+                                    <li><a href="pages-error-500.html"> Error 500</a></li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text">Layouts</span></a>
+                        <ul>
+                            <li><a href="layout-boxed.html">Boxed</a></li>
+                            <li><a href="layout-nav-toggled.html">Navigation Toggled</a></li>
+                            <li><a href="layout-nav-top.html">Navigation Top</a></li>
+                            <li><a href="layout-nav-right.html">Navigation Right</a></li>
+                            <li><a href="layout-nav-top-fixed.html">Top Navigation Fixed</a></li>                            
+                            <li><a href="layout-nav-custom.html">Custom Navigation</a></li>
+                            <li><a href="layout-frame-left.html">Frame Left Column</a></li>
+                            <li><a href="layout-frame-right.html">Frame Right Column</a></li>
+                            <li><a href="layout-search-left.html">Search Left Side</a></li>
+                            <li><a href="blank.html">Blank Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="xn-title">Components</li>
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">UI Kits</span></a>                        
+                        <ul>
+                            <li><a href="ui-widgets.html"><span class="fa fa-heart"></span> Widgets</a></li>                            
+                            <li><a href="ui-elements.html"><span class="fa fa-cogs"></span> Elements</a></li>
+                            <li><a href="ui-buttons.html"><span class="fa fa-square-o"></span> Buttons</a></li>                            
+                            <li><a href="ui-panels.html"><span class="fa fa-pencil-square-o"></span> Panels</a></li>
+                            <li><a href="ui-icons.html"><span class="fa fa-magic"></span> Icons</a><div class="informer informer-warning">+679</div></li>
+                            <li><a href="ui-typography.html"><span class="fa fa-pencil"></span> Typography</a></li>
+                            <li><a href="ui-portlet.html"><span class="fa fa-th"></span> Portlet</a></li>
+                            <li><a href="ui-sliders.html"><span class="fa fa-arrows-h"></span> Sliders</a></li>
+                            <li><a href="ui-alerts-popups.html"><span class="fa fa-warning"></span> Alerts & Popups</a></li>                            
+                            <li><a href="ui-lists.html"><span class="fa fa-list-ul"></span> Lists</a></li>
+                            <li><a href="ui-tour.html"><span class="fa fa-random"></span> Tour</a></li>
+                        </ul>
+                    </li>                    
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-pencil"></span> <span class="xn-text">Forms</span></a>
+                        <ul>
+                            <li>
+                                <a href="form-layouts-two-column.html"><span class="fa fa-tasks"></span> Form Layouts</a>
+                                <div class="informer informer-danger">New</div>
+                                <ul>
+                                    <li><a href="form-layouts-one-column.html"><span class="fa fa-align-justify"></span> One Column</a></li>
+                                    <li><a href="form-layouts-two-column.html"><span class="fa fa-th-large"></span> Two Column</a></li>
+                                    <li><a href="form-layouts-tabbed.html"><span class="fa fa-table"></span> Tabbed</a></li>
+                                    <li><a href="form-layouts-separated.html"><span class="fa fa-th-list"></span> Separated Rows</a></li>
+                                </ul> 
+                            </li>
+                            <li><a href="form-elements.html"><span class="fa fa-file-text-o"></span> Elements</a></li>
+                            <li><a href="form-validation.html"><span class="fa fa-list-alt"></span> Validation</a></li>
+                            <li><a href="form-wizards.html"><span class="fa fa-arrow-right"></span> Wizards</a></li>
+                            <li><a href="form-editors.html"><span class="fa fa-text-width"></span> WYSIWYG Editors</a></li>
+                            <li><a href="form-file-handling.html"><span class="fa fa-floppy-o"></span> File Handling</a></li>
+                        </ul>
+                    </li>
+                    <li class="xn-openable">
+                        <a href="tables.html"><span class="fa fa-table"></span> <span class="xn-text">Tables</span></a>
+                        <ul>                            
+                            <li><a href="table-basic.html"><span class="fa fa-align-justify"></span> Basic</a></li>
+                            <li><a href="table-datatables.html"><span class="fa fa-sort-alpha-desc"></span> Data Tables</a></li>
+                            <li><a href="table-export.html"><span class="fa fa-download"></span> Export Tables</a></li>                            
+                        </ul>
+                    </li>
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-bar-chart-o"></span> <span class="xn-text">Charts</span></a>
+                        <ul>
+                            <li><a href="charts-morris.html"><span class="xn-text">Morris</span></a></li>
+                            <li><a href="charts-nvd3.html"><span class="xn-text">NVD3</span></a></li>
+                            <li><a href="charts-rickshaw.html"><span class="xn-text">Rickshaw</span></a></li>
+                            <li><a href="charts-other.html"><span class="xn-text">Other</span></a></li>
+                        </ul>
+                    </li>                   
+                    <li>
+                        <a href="maps.html"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
+                    </li>                    
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-sitemap"></span> <span class="xn-text">Navigation Levels</span></a>
+                        <ul>                            
+                            <li class="xn-openable">
+                                <a href="#">Second Level</a>
+                                <ul>
+                                    <li class="xn-openable">
+                                        <a href="#">Third Level</a>
+                                        <ul>
+                                            <li class="xn-openable">
+                                                <a href="#">Fourth Level</a>
+                                                <ul>
+                                                    <li><a href="#">Fifth Level</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <!-- END X-NAVIGATION -->
+            </div>
+            <!-- END PAGE SIDEBAR -->
+            
+            <!-- PAGE CONTENT -->
+            <div class="page-content">
+                
+                <!-- START X-NAVIGATION VERTICAL -->
+                <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+                    <!-- TOGGLE NAVIGATION -->
+                    <li class="xn-icon-button">
+                        <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>
+                    </li>
+                    <!-- END TOGGLE NAVIGATION -->
+                    <!-- SEARCH -->
+                    <li class="xn-search">
+                        <form role="form">
+                            <input type="text" name="search" placeholder="Search..."/>
+                        </form>
+                    </li>   
+                    <!-- END SEARCH -->
+                    <!-- SIGN OUT -->
+                    <li class="xn-icon-button pull-right">
+                        <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>                        
+                    </li> 
+                    <!-- END SIGN OUT -->
+                    <!-- MESSAGES -->
+                    <li class="xn-icon-button pull-right">
+                        <a href="#"><span class="fa fa-comments"></span></a>
+                        <div class="informer informer-danger">4</div>
+                        <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><span class="fa fa-comments"></span> Messages</h3>                                
+                                <div class="pull-right">
+                                    <span class="label label-danger">4 new</span>
+                                </div>
+                            </div>
+                            <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-online"></div>
+                                    <img src="assets/images/users/user2.jpg" class="pull-left" alt="John Doe"/>
+                                    <span class="contacts-title">John Doe</span>
+                                    <p>Praesent placerat tellus id augue condimentum</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-away"></div>
+                                    <img src="assets/images/users/user.jpg" class="pull-left" alt="Dmitry Ivaniuk"/>
+                                    <span class="contacts-title">Dmitry Ivaniuk</span>
+                                    <p>Donec risus sapien, sagittis et magna quis</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-away"></div>
+                                    <img src="assets/images/users/user3.jpg" class="pull-left" alt="Nadia Ali"/>
+                                    <span class="contacts-title">Nadia Ali</span>
+                                    <p>Mauris vel eros ut nunc rhoncus cursus sed</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-offline"></div>
+                                    <img src="assets/images/users/user6.jpg" class="pull-left" alt="Darth Vader"/>
+                                    <span class="contacts-title">Darth Vader</span>
+                                    <p>I want my money back!</p>
+                                </a>
+                            </div>     
+                            <div class="panel-footer text-center">
+                                <a href="pages-messages.html">Show all messages</a>
+                            </div>                            
+                        </div>                        
+                    </li>
+                    <!-- END MESSAGES -->
+                    <!-- TASKS -->
+                    <li class="xn-icon-button pull-right">
+                        <a href="#"><span class="fa fa-tasks"></span></a>
+                        <div class="informer informer-warning">3</div>
+                        <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><span class="fa fa-tasks"></span> Tasks</h3>                                
+                                <div class="pull-right">
+                                    <span class="label label-warning">3 active</span>
+                                </div>
+                            </div>
+                            <div class="panel-body list-group scroll" style="height: 200px;">                                
+                                <a class="list-group-item" href="#">
+                                    <strong>Phasellus augue arcu, elementum</strong>
+                                    <div class="progress progress-small progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                    </div>
+                                    <small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
+                                </a>
+                                <a class="list-group-item" href="#">
+                                    <strong>Aenean ac cursus</strong>
+                                    <div class="progress progress-small progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                    </div>
+                                    <small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
+                                </a>
+                                <a class="list-group-item" href="#">
+                                    <strong>Lorem ipsum dolor</strong>
+                                    <div class="progress progress-small progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+                                    </div>
+                                    <small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+                                </a>
+                                <a class="list-group-item" href="#">
+                                    <strong>Cras suscipit ac quam at tincidunt.</strong>
+                                    <div class="progress progress-small">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                    </div>
+                                    <small class="text-muted">John Doe, 21 Sep 2014 /</small><small class="text-success"> Done</small>
+                                </a>                                
+                            </div>     
+                            <div class="panel-footer text-center">
+                                <a href="pages-tasks.html">Show all tasks</a>
+                            </div>                            
+                        </div>                        
+                    </li>
+                    <!-- END TASKS -->
+                </ul>
+                <!-- END X-NAVIGATION VERTICAL -->                     
+                
+<!-- 这里开始删吧！！！！！骚年！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！ -->
+
+        <link rel="stylesheet" type="text/css" href="css/tasks.css"/>
+
+                <!-- START BREADCRUMB -->
+                <ul class="breadcrumb push-down-0">
+                    <li><a href="#">首页</a></li>
+                    <li class="active">任务中心</li>
+                </ul>
+                <!-- END BREADCRUMB -->                                                
+                                
+                <!-- START CONTENT FRAME -->
+                <div class="content-frame">     
+                    <!-- START CONTENT FRAME TOP -->
+                    <div class="content-frame-top">                        
+                        <div class="page-title">                    
+                            <h2><span class="fa fa-arrow-circle-o-left"></span> 任务中心</h2>
+                        </div>                                                
+                        <div class="pull-right">
+                            <button class="btn btn-default content-frame-left-toggle"><span class="fa fa-bars"></span></button>
+                        </div>                                
+                        <div class="pull-right" style="width: 100px; margin-right: 5px;">
+                            <select class="form-control select" id="show_date">
+                                <option value="今天">今天</option>                                
+                                <option value="昨天">昨天</option>
+                                <option value="前天">前天</option>
+                                <option value="当前星期">当前星期</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <form action="#" method="POST" id="tasks_form">
+                        <div class="content-frame-left">
+                            <div class="form-group">
+                                <h4>添加新任务：</h4>
+                                <textarea class="form-control push-down-10" id="new_task" rows="4" placeholder="请输入您的任务..."></textarea>   
+                            </div>
+                            <div class="form-group">
+                                <h4>任务程度</h4>
+                                <div class="list-group border-bottom">
+                                    <a href="#" class="list-group-item active"><span class="fa fa-circle text-danger"></span> 重要且紧急</a>
+                                    <a href="#" class="list-group-item"><span class="fa fa-circle text-info"></span> 重要但不紧急</a>
+                                    <a href="#" class="list-group-item"><span class="fa fa-circle text-success"></span> 不重要但紧急</a>
+                                    <a href="#" class="list-group-item"><span class="fa fa-circle text-primary"></span> 不重要也不紧急</a>
+                                </div>
+                            </div>
+                            <div class="form-group">                           
+                                <button class="btn btn-primary" id="add_new_task" type="button"><span class="fa fa-edit"></span> 添加</button>
+                            </div>
+                        </div>      
+                    </form> 
+                    <!-- END CONTENT FRAME TOP -->
+                    
+                    <!-- START CONTENT FRAME BODY -->
+                    <div class="content-frame-body">
+                                                
+                        <div class="row push-up-10">
+                            <div class="col-md-4">
+                                
+                                <h3>要做的</h3>
+                                
+                                <div class="tasks" id="tasks">
+
+                                    <div class="task-item task-primary">
+                                        <input type="hidden" class="form-control task_id" value="1">
+                                        <div class="task-text">与潘嘉荣去钓鱼。</div>
+                                        <div class="task-footer">
+                                            <div class="pull-left todo_div_left"><span class="fa fa-clock-o"></span> 于<span class="todo_time">2015/7/23 10:24:43</span> 去做</div>                                    
+                                        </div>                                    
+                                    </div>
+
+                                    <div class="task-item task-success">             
+                                        <input type="hidden" class="form-control task_id" value="2">                       
+                                        <div class="task-text">与张泽权去戏水。</div>
+                                        <div class="task-footer">
+                                            <div class="pull-left todo_div_left"><span class="fa fa-clock-o"></span> 于<span class="todo_time">2015/7/23 08:04:43</span> 去做</div>
+                                        </div>                                    
+                                    </div>
+
+                                    <div class="task-item task-warning">             
+                                        <input type="hidden" class="form-control task_id" value="3">                       
+                                        <div class="task-text">与方赞潘去前台申请经费。</div>
+                                        <div class="task-footer">
+                                            <div class="pull-left todo_div_left"><span class="fa fa-clock-o"></span> 于<span class="todo_time">2015/7/23 12:42:23</span> 去做</div>
+                                        </div>                                    
+                                    </div>
+
+                                    <div class="task-item task-primary">             
+                                        <input type="hidden" class="form-control task_id" value="4">                       
+                                        <div class="task-text">全体员工去澳门旅游。</div>
+                                        <div class="task-footer">
+                                            <div class="pull-left todo_div_left"><span class="fa fa-clock-o"></span> 于<span class="todo_time">2015/7/23 13:04:43</span> 去做</div>
+                                        </div>                                    
+                                    </div>
+                                    
+                                </div>                            
+
+                            </div>
+                            <div class="col-md-4">
+                                <h3>正在做的</h3>
+                                <div class="tasks" id="tasks_progreess">
+                                    <!-- (正常正在做的)开始 -->
+                                    <div class="task-item task-warning">
+                                        <input type="hidden" class="form-control task_id" value="5">
+                                        <div class="task-text">撸呀撸阿，撸代码。</div>
+                                        <div class="task-footer">
+                                            <div class="pull-left todo_div_left hidden">
+                                                <span class="fa fa-clock-o"></span> 于<span class="todo_time">2015/7/23 13:04:43</span> 去做
+                                            </div>
+                                            <div class="pull-left doing_div_left">
+                                                <span class="fa fa-clock-o"></span> 于<span class="doing_time">2015/7/23 15:04:43</span> 开始做
+                                            </div>
+                                            <div class="pull-right doing_div_right">
+                                                <span class="fa fa-play"></span> 开始计算时间
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    <!-- (正常正在做的)结束 -->
+                                    <!-- (再次做的)开始 -->
+                                    <div class="task-item task-danger task-complete">        
+                                        <input type="hidden" class="form-control task_id" value="8">                            
+                                        <div class="task-text">叫阿姨上楼。</div>
+                                        <div class="task-footer">
+                                            <div class="pull-left todo_div_left hidden">
+                                                <span class="fa fa-clock-o"></span> 于<span class="todo_time">2015/7/23 13:04:43</span> 去做
+                                            </div>
+                                            <div class="pull-left doing_div_left hidden">
+                                                <span class="fa fa-clock-o"></span> 于<span class="doing_time">2015/7/23 15:04:43</span> 开始做
+                                            </div>
+                                            <div class="pull-left doing_div_left_temp">
+                                                <span class="fa fa-clock-o"></span> 于<span class="doing_time_temp">2015/7/23 17:04:43</span> 再做
+                                            </div>
+                                            <div class="pull-left done_div_left hidden">
+                                                <span class="fa fa-clock-o"></span> 于<span class="done_time">2015/7/23 17:04:43</span> 做完
+                                            </div>
+                                            <div class="pull-right done_div_right hidden">
+                                                <span class="fa fa-pause"></span> 共耗费 
+                                                <span class="done_consume">
+                                                    <span class="consume_day"><span class="day">1</span> 天</span>
+                                                    <span class="consume_hour"><span class="hour">14</span> 小时</span>
+                                                    <span class="consume_minute"><span class="minute">38</span> 分钟</span>
+                                                </span>
+                                            </div>
+                                            <div class="pull-right doing_div_right">
+                                                <span class="fa fa-play"></span> 开始计算时间
+                                            </div>
+                                        </div>                                    
+                                    </div>  
+                                    <!-- (再次做的)结束 -->                          
+                                    
+                                    <div class="task-drop push-down-10">
+                                        <span class="fa fa-cloud"></span>
+                                        将任务拖拽至此表示正在进行
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h3>已经完成的</h3>
+                                <div class="tasks" id="tasks_completed">
+                                    <!-- (再次做完)开始 -->
+                                    <div class="task-item task-danger task-complete">        
+                                        <input type="hidden" class="form-control task_id" value="6">                            
+                                        <div class="task-text">去楼下拿水。</div>
+                                        <div class="task-footer">
+                                            <div class="pull-left todo_div_left hidden">
+                                                <span class="fa fa-clock-o"></span> 于<span class="todo_time">2015/7/23 13:04:43</span> 去做
+                                            </div>
+                                            <div class="pull-left doing_div_left hidden">
+                                                <span class="fa fa-clock-o"></span> 于<span class="doing_time">2015/7/23 15:04:43</span> 开始做
+                                            </div>
+                                            <div class="pull-left doing_div_left_temp hidden">
+                                                <span class="fa fa-clock-o"></span> 于<span class="doing_time_temp">2015/7/23 17:04:43</span> 再做
+                                            </div>
+                                            <div class="pull-left done_div_left">
+                                                <span class="fa fa-clock-o"></span> 于<span class="done_time">2015/7/23 17:04:43</span> 做完
+                                            </div>
+                                            <div class="pull-right done_div_right">
+                                                <span class="fa fa-pause"></span> 共耗费 
+                                                <span class="done_consume">
+                                                    <span class="consume_day hidden"><span class="day">0</span> 天</span>
+                                                    <span class="consume_hour hidden"><span class="hour">0</span> 小时</span>
+                                                    <span class="consume_minute"><span class="minute">20</span> 分钟</span>
+                                                </span>
+                                            </div>
+                                            <div class="pull-right doing_div_right hidden">
+                                                <span class="fa fa-play"></span> 开始计算时间
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    <!-- (再次做完)结束 -->
+                                    <!-- (第一次做完)开始 -->
+                                    <div class="task-item task-info task-complete">  
+                                        <input type="hidden" class="form-control task_id" value="7">                                  
+                                        <div class="task-text">上厕所。</div>
+                                        <div class="task-footer">
+                                            <div class="pull-left todo_div_left hidden"><span class="fa fa-clock-o"></span> 于<span class="todo_time">2015/7/23 13:04:43</span> 去做</div>
+                                            <div class="pull-left doing_div_left hidden">
+                                                <span class="fa fa-clock-o"></span> 于<span class="doing_time">2015/7/23 18:04:38</span> 开始做
+                                            </div>
+                                            <div class="pull-left done_div_left">
+                                                <span class="fa fa-clock-o"></span> 于<span class="done_time">2015/7/23 18:04:43</span> 做完
+                                            </div>
+                                            <div class="pull-right done_div_right">
+                                                <span class="fa fa-pause"></span> 共耗费 
+                                                <span class="done_consume">
+                                                    <span class="consume_day hidden"><span class="day">0</span> 天</span>
+                                                    <span class="consume_hour"><span class="hour">1</span> 小时</span>
+                                                    <span class="consume_minute"><span class="minute">8</span> 分钟</span>
+                                                </span>
+                                            </div>
+                                            <div class="pull-right doing_div_right hidden">
+                                                <span class="fa fa-play"></span> 开始计算时间
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                    <!-- (第一次做完)结束 -->
+                                    <div class="task-drop">
+                                        <span class="fa fa-cloud"></span>
+                                        将任务拖拽至此表示完成
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>                        
+                                                
+                    </div>
+                    <!-- END CONTENT FRAME BODY -->
+                    
+                </div>
+                <!-- END CONTENT FRAME -->
+
+            </div>            
+            <!-- END PAGE CONTENT -->
+        </div>
+        <!-- END PAGE CONTAINER -->
+
+        <!-- START PRELOADS -->
+        <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+        <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+        <!-- END PRELOADS -->                    
+        
+    <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
+        <!-- END PLUGINS -->
+
+        <!-- START THIS PAGE PLUGINS-->        
+        <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
+        <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+        
+        <script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.js"></script>
+        <script type="text/javascript" src="js/plugins/moment.min.js"></script>
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap-select.js"></script> 
+        <!-- END THIS PAGE PLUGINS-->        
+
+        <!-- START TEMPLATE -->
+        <script type="text/javascript" src="js/settings.js"></script>
+        
+        <script type="text/javascript" src="js/plugins.js"></script>        
+        <script type="text/javascript" src="js/actions.js"></script>
+        <!-- <script type="text/javascript" src="js/demo_tasks.js"></script> -->
+        <!-- END TEMPLATE -->
+        <script type="text/javascript">
+            $(function(){
+    
+                var tasks = function(){
+                    
+                    $("#add_new_task").on("click",function(){
+                        
+                        var today = new Date();
+                        var todayLocal = today.toLocaleDateString();
+                        var todayHour = today.getHours();
+                        var todayMinutes = today.getMinutes();
+                        var todaySeconds = today.getSeconds();
+                        if ( todayHour < 10 ) {
+                            todayHour = "0"+todayHour;
+                        };
+                        if ( todayMinutes < 10 ) {
+                            todayMinutes = "0"+todayMinutes;
+                        };
+                        if ( todaySeconds < 10 ) {
+                            todaySeconds = "0"+todaySeconds;
+                        };
+                        var todayTime = todayHour+":"+todayMinutes+":"+todaySeconds;
+                        var today_final = todayLocal + " " + todayTime;
+
+                        var nt = $("#new_task").val();
+                        var task_style = "";
+                        if(nt != ''){
+
+                            //任务样式赋值
+                            if ($("a.list-group-item.active > span").hasClass('text-danger')) {
+                                task_style = "task-danger";
+                            }else if($("a.list-group-item.active > span").hasClass('text-info')){
+                                task_style = "task-info";
+                            }else if($("a.list-group-item.active > span").hasClass('text-success')){
+                                task_style = "task-success";
+                            }else if($("a.list-group-item.active > span").hasClass('text-primary')){
+                                task_style = "task-primary";
+                            }
+
+                            //任务内容
+                            var task = '<div class="task-item '+ task_style + '">'
+                                            +'<div class="task-text">'+ nt +'</div>'
+                                            +'<div class="task-footer">'
+                                                +'<div class="pull-left todo_div_left">'
+                                                    +'<span class="fa fa-clock-o"></span> 于'
+                                                    +'<span class="todo_time">' + today_final + '</span> 去做'
+                                                +'</div>'
+                                            +'</div>'
+                                        +'</div>';
+                            //任务嵌入
+                            $("#tasks").prepend(task);
+                        }            
+                    });
+                    
+                    $("#tasks,#tasks_progreess,#tasks_completed").sortable({
+                        items: "> .task-item",
+                        connectWith: "#tasks_progreess,#tasks_completed",
+                        handle: ".task-text",            
+                        receive: function(event, ui) {
+
+                            //拖去已经完成的
+                            if(this.id == "tasks_completed"){
+
+                                var id = ui.item.find('.task_id').val();     //获取任务id值
+
+                                ui.item.addClass('task-complete');
+
+                                var doing_div_left = ui.item.find('.doing_div_left').text();             //获取要做的
+                                var doing_div_left_temp = ui.item.find('.doing_div_left_temp').text();       //获取已经完成的是否存在再次做
+
+                                var today = new Date();
+                                var todayLocal = today.toLocaleDateString();    //日期
+                                var todayHour = today.getHours();
+                                var todayMinutes = today.getMinutes();
+                                var todaySeconds = today.getSeconds();
+                                if ( todayHour < 10 ) {
+                                    todayHour = "0"+todayHour;
+                                };
+                                if ( todayMinutes < 10 ) {
+                                    todayMinutes = "0"+todayMinutes;
+                                };
+                                if ( todaySeconds < 10 ) {
+                                    todaySeconds = "0"+todaySeconds;
+                                };
+                                var todayTime = todayHour+":"+todayMinutes+":"+todaySeconds;    //时间
+                                var today_final = todayLocal + " " + todayTime;
+
+                                if (doing_div_left == "") {      //判断操作从 要做的 -> 已经完成的
+
+                                    ui.item.find(".todo_div_left").addClass('hidden');
+                                    ui.item.find(".task-footer").append('<div class="pull-left doing_div_left hidden">' +
+                                                '<span class="fa fa-clock-o"></span> 于<span class="doing_time">' + today_final + '</span> 开始做' +
+                                            '</div>' + 
+                                            '<div class="pull-left done_div_left">' +
+                                                '<span class="fa fa-clock-o"></span> 于<span class="done_time">' + today_final + '</span> 做完' +
+                                            '</div>' +
+                                            '<div class="pull-right done_div_right">' +
+                                                '<span class="fa fa-pause"></span> 共耗费 ' +
+                                                '<span class="done_consume">' +
+                                                    '<span class="consume_day hidden"><span class="day">0</span> 天 </span>' +
+                                                    '<span class="consume_hour hidden"><span class="hour">0</span> 小时 </span>' +
+                                                    '<span class="consume_minute"><span class="minute">0</span> 分钟</span>' +
+                                                '</span>' +
+                                            '</div>');
+                                    ui.item.find(".task-footer").append('<div class="pull-right doing_div_right hidden"><span class="fa fa-play"></span> 开始计算时间</div>');
+
+                                    alert("动作为：要做的-->已经完成的\\nid值为：< " + id + " >\\n做完的时间为：< " + today_final + " >\\n耗费毫秒为：< 0 >(直接为0)");
+
+                                }else{      //判断操作从 正在做的 -> 已经完成的
+
+                                    if (doing_div_left_temp == "") {     //判断操作 属于第一次做完
+
+                                        var doing_time = ui.item.find('.doing_time').text();
+
+                                        var before_date = new Date(doing_time);     //获取开始做的时间戳
+                                        var before_minute = before_date.getTime();  //将时间戳换算为毫秒
+                                        var after_minute = today.getTime();         //换算今天的时间戳为毫秒
+
+                                        var count_minute = after_minute - before_minute;    //计算开始至今天耗费的毫秒
+
+                                        var count_time = count_minute / (24*60*60*1000);    //计算今天
+                                        var final_day = Math.floor(count_time);
+
+                                        count_time = (count_time - final_day) * 24;         //计算剩余小时
+                                        var final_hour = Math.floor(count_time);
+
+                                        count_time = (count_time - final_hour) * 60;        //计算剩余分钟
+                                        var final_minute = Math.floor(count_time);
+
+                                        count_time = (count_time - final_minute) * 60;      //计算剩余秒数
+                                        var final_second = Math.floor(count_time);
+
+                                        //隐藏开始做
+                                        ui.item.find(".doing_div_left").addClass('hidden');
+                                        //隐藏开始计算时间
+                                        ui.item.find(".doing_div_right").addClass('hidden');
+
+                                        ui.item.find(".task-footer").append('<div class="pull-left done_div_left">' +
+                                            '<span class="fa fa-clock-o"></span> 于<span class="done_time">' + today_final + '</span> 做完' +
+                                        '</div>' +
+                                        '<div class="pull-right done_div_right">' +
+                                            '<span class="fa fa-pause"></span> 共耗费 ' +
+                                            '<span class="done_consume">' +
+                                                '<span class="consume_day"><span class="day">' + final_day + '</span> 天 </span>' +
+                                                '<span class="consume_hour"><span class="hour">' + final_hour + '</span> 小时 </span>' +
+                                                '<span class="consume_minute"><span class="minute">' + final_minute + '</span> 分钟</span>' +
+                                            '</span>' +
+                                        '</div>');
+
+                                        alert("动作为：正在做的-->已经完成的\\nid值为：< " + id + " >\\n条件限制为：第一次做完\\n做完的时间为：< " + today_final + " >\\n耗费时间为：< " + count_minute + " >");
+
+                                    }else{      //判断操作 属于多次再次做
+
+                                        ui.item.find(".done_time").text(today_final);
+                                        var doing_time = ui.item.find('.doing_time_temp').text();
+
+                                        var before_date = new Date(doing_time);     //获取再做的时间戳
+                                        var before_minute = before_date.getTime();  //将时间戳换算为毫秒
+                                        var after_minute = today.getTime();         //换算今天的时间戳为毫秒
+
+                                        var count_minute = after_minute - before_minute;    //计算开始至今天耗费的毫秒
+
+                                        var count_time = count_minute / (24 * 60 * 60 * 1000);    //计算今天
+                                        var final_day = Math.floor(count_time);
+
+                                        count_time = (count_time - final_day) * 24;         //计算剩余小时
+                                        var final_hour = Math.floor(count_time);
+
+                                        count_time = (count_time - final_hour) * 60;        //计算剩余分钟
+                                        var final_minute = Math.floor(count_time);
+
+                                        count_time = (count_time - final_minute) * 60;      //计算剩余秒数
+                                        var final_second = Math.floor(count_time);
+
+                                        //更改天
+                                        var day_text = parseInt(ui.item.find('.day').text()) + final_day;
+                                        ui.item.find('.day').text(day_text);
+                                        //更改小时
+                                        var hour_text = parseInt(ui.item.find('.hour').text()) + final_hour;
+                                        ui.item.find('.hour').text(hour_text);
+                                        //更改分钟
+                                        var minute_text = parseInt(ui.item.find('.minute').text()) + final_minute;
+                                        ui.item.find('.minute').text(final_minute);
+
+                                        if ( ui.item.find(".day").hasClass('hidden') && day_text > 0 ) {            //判断天数显示
+                                            ui.item.find(".day").removeClass('hidden');
+                                        };
+                                        if ( ui.item.find(".hour").hasClass('hidden') && hour_text > 0 ) {          //判断小时显示
+                                            ui.item.find(".hour").removeClass('hidden');
+                                        };
+
+                                        //隐藏再做
+                                        ui.item.find(".doing_div_left_temp").addClass('hidden');
+                                        //隐藏开始计算时间
+                                        ui.item.find(".doing_div_right").addClass('hidden');
+                                        //显示做完
+                                        ui.item.find(".done_div_left").removeClass('hidden');
+                                        //显示耗费时间
+                                        ui.item.find(".done_div_right").removeClass('hidden');
+
+                                        var update_minutes = parseInt(day_text * 24 * 60 * 60 * 1000) + parseInt(hour_text * 60 * 60 * 1000) + parseInt(minute_text * 60 * 1000);
+                                        alert("动作为：正在做的-->已经完成的\\nid值为：< " + id + " >\\n条件限制为：再次做完\\n做完的时间为：< " + today_final + " >\\n耗费时间为：< " + update_minutes + " >");
+                                    };
+
+                                }
+                            }
+
+                            //拖进去正在做的
+                            if(this.id == "tasks_progreess"){
+
+
+                                var id = ui.item.find('.task_id').val();     //获取任务id值
+
+                                var doing_div_left = ui.item.find('.doing_div_left').text();             //获取要做的
+                                var doing_div_left_temp = ui.item.find('.doing_div_left_temp').text();       //获取已经完成的是否存在再次做
+
+                                var today = new Date();
+                                var todayLocal = today.toLocaleDateString();    //日期
+                                var todayHour = today.getHours();
+                                var todayMinutes = today.getMinutes();
+                                var todaySeconds = today.getSeconds();
+                                if ( todayHour < 10 ) {
+                                    todayHour = "0"+todayHour;
+                                };
+                                if ( todayMinutes < 10 ) {
+                                    todayMinutes = "0"+todayMinutes;
+                                };
+                                if ( todaySeconds < 10 ) {
+                                    todaySeconds = "0"+todaySeconds;
+                                };
+                                var todayTime = todayHour+":"+todayMinutes+":"+todaySeconds;    //时间
+                                var today_final = todayLocal + " " + todayTime;
+
+                                if (doing_div_left == "") {      //判断操作从 要做的 -> 正在做的
+
+                                    ui.item.find(".todo_div_left").addClass('hidden');
+                                    ui.item.find(".task-footer").append('<div class="pull-left doing_div_left">' +
+                                                        '<span class="fa fa-clock-o"></span> 于<span class="doing_time">' + today_final + '</span> 开始做' +
+                                                    '</div>')
+                                    ui.item.find(".task-footer").append('<div class="pull-right doing_div_right"><span class="fa fa-play"></span> 开始计算时间</div>');
+
+                                    alert("动作为：要做的-->正在做的\\nid值为：< " + id + " >\\n开始做的时间为：< " + today_final + " >");
+
+                                }else {     //判断操作从 已经完成的 -> 正在做的
+
+                                    if (doing_div_left_temp == "") {     //判断操作 属于第一次再次做
+
+                                        //显示再做
+                                        ui.item.find(".task-footer").append('<div class="pull-left doing_div_left_temp">' +
+                                                '<span class="fa fa-clock-o"></span> 于<span class="doing_time_temp">' + today_final + '</span> 再做' +
+                                            '</div>');
+                                        //隐藏耗费时间
+                                        ui.item.find(".done_div_right").addClass('hidden');
+                                        //隐藏做完
+                                        ui.item.find(".done_div_left").addClass('hidden');
+                                        //显示开始计算时间
+                                        ui.item.find(".doing_div_right").removeClass('hidden');
+
+                                        alert("动作为：要做的-->正在做的\\nid值为：< " + id + " >\\第一次再次做\\n再做的时间为：< " + today_final + " >");
+
+                                    }else{      //判断操作 属于多次再次做
+
+                                        //显示再做
+                                        ui.item.find(".doing_div_left_temp").removeClass('hidden');
+                                        //更新再做时间
+                                        ui.item.find(".doing_time_temp").text(today_final);
+                                        //隐藏耗费时间
+                                        ui.item.find(".done_div_right").addClass('hidden');
+                                        //隐藏做完
+                                        ui.item.find(".done_div_left").addClass('hidden');
+                                        //显示开始计算时间
+                                        ui.item.find(".doing_div_right").removeClass('hidden');
+
+                                        alert("动作为：要做的-->正在做的\\nid值为：< " + id + " >\\多次再次做\\n再做的时间为：< " + today_final + " >");
+
+                                    };
+                                }
+
+                            }
+                            page_content_onresize();
+                        }
+                    }).disableSelection();
+                    
+                }();
+                
+                //任务程度选择
+                $("a.list-group-item").click(function(){
+                    $(this).siblings().removeClass('active');
+                    $(this).addClass('active');
+                })
+
+                //
+                $("#show_date").change(function() {
+                    alert($(this).val());
+                });
+
+            });
+
+        </script>
+    <!-- END SCRIPTS -->         
+    </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+/* 
+* @Author: anchen
+* @Date:   2015-07-04 17:27:53
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-07-23 16:48:25
+*/
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus{
+    background-color: #fff;
+    border-color: #e5e5e5;
+    border-width: 5px;
+    color: royalblue;
+}
+a.list-group-item:hover, a.list-group-item:focus{
+    border-width: 5px;
+    color: royalblue;
+}
+a.list-group-item{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <!-- META SECTION -->
+        <title>SXOA - 穗鑫管理系统</title>            
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <!-- END META SECTION -->
+        
+        <!-- CSS INCLUDE -->        
+        <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+        <!-- EOF CSS INCLUDE -->                                    
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    </head>
+    <body>
+    
+        <!-- MESSAGE BOX-->
+        <div class="message-box animated fadeIn" data-sound="alert" id="mb-signout">
+            <div class="mb-container">
+                <div class="mb-middle">
+                    <div class="mb-title"><span class="fa fa-sign-out"></span><strong>退出</strong> ?</div>
+                    <div class="mb-content">
+                        <p> 您 确 定 要 退 出 吗 ？ </p>                    
+                        <p> 如 果 你 想 继 续 操 作 ， 请 点 击 取 消 。 点 击 确 定 将 退 出 当 前 账 号 。</p>
+                    </div>
+                    <div class="mb-footer">
+                        <div class="pull-right">
+                            <a href="pages-login.html" class="btn btn-success btn-lg">确定</a>
+                            <button class="btn btn-default btn-lg mb-control-close">退出</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MESSAGE BOX-->
+
+        <!-- START PAGE CONTAINER -->
+        <div class="page-container">
+            
+            <!-- START PAGE SIDEBAR -->
+            <div class="page-sidebar">
+                <!-- START X-NAVIGATION -->
+                <ul class="x-navigation">
+                    <li class="xn-logo">
+                        <a href="index.html">S X O A</a>
+                        <a href="#" class="x-navigation-control"></a>
+                    </li>
+                    <li class="xn-profile">
+                        <a href="#" class="profile-mini">
+                            <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
+                        </a>
+                        <div class="profile">
+                            <div class="profile-image">
+                                <img src="assets/images/users/avatar.jpg" alt="John Doe"/>
+                            </div>
+                            <div class="profile-data">
+                                <div class="profile-data-name">超级管理员</div>
+                                <div class="profile-data-title">Super Manager</div>
+                            </div>
+                            <div class="profile-controls">
+                                <a href="profile.html" class="profile-control-left"><span class="fa fa-info"></span></a>
+                                <a href="pages-messages.html" class="profile-control-right"><span class="fa fa-envelope"></span></a>
+                            </div>
+                        </div>                                                                        
+                    </li>
+                    <li class="active">
+                        <a href="index.html">
+                            <span class="fa fa-desktop"></span> 
+                            <span class="xn-text">控制台</span>
+                        </a>                        
+                    </li>                    
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-files-o"></span> <span class="xn-text">管理</span></a>
+                        <ul>
+                            <li><a href="user_manage.html"><span class="fa fa-users"></span>用户管理</a></li>
+                            <li><a href="department_manage.html"><span class="fa fa-users"></span>部门管理</a></li>
+                            <li><a href="#"><span class="fa fa-cogs"></span>公告管理</a></li>
+                        </ul>
+                    </li>
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text">信息</span></a>
+                        <ul>
+                            <li><a href="profile.html">个人信息</a></li>
+                            <li><a href="#">数据查询</a></li>
+                            <li><a href="#">日志查看</a></li>
+                        </ul>
+                    </li>
+                    <li class="xn-openable">
+                        <a href="#"><span class="fa fa-cogs"></span> <span class="xn-text">操作</span></a>
+                        <ul>
+                            <li><a href="leave_manage.html"><span class="fa fa-square-o"></span>请假审批</a></li>   
+                        </ul>
+                    </li>
+                </ul>
+                <!-- END X-NAVIGATION -->
+            </div>
+            <!-- END PAGE SIDEBAR -->
+            
+            <!-- PAGE CONTENT -->
+            <div class="page-content">
+                
+                <!-- START X-NAVIGATION VERTICAL -->
+                <ul class="x-navigation x-navigation-horizontal x-navigation-panel">
+                    <!-- TOGGLE NAVIGATION -->
+                    <li class="xn-icon-button">
+                        <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>
+                    </li>
+                    <!-- END TOGGLE NAVIGATION -->
+                    <!-- SEARCH -->
+                    <li class="xn-search">
+                        <form role="form">
+                            <input type="text" name="search" placeholder="请输入搜索内容..."/>
+                        </form>
+                    </li>   
+                    <!-- END SEARCH -->
+                    <!-- SIGN OUT -->
+                    <li class="xn-icon-button pull-right">
+                        <a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>                        
+                    </li> 
+                    <!-- END SIGN OUT -->
+                    <!-- MESSAGES -->
+                    <li class="xn-icon-button pull-right">
+                        <a href="#"><span class="fa fa-comments"></span></a>
+                        <div class="informer informer-danger">4</div>
+                        <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><span class="fa fa-comments"></span> Messages</h3>                                
+                                <div class="pull-right">
+                                    <span class="label label-danger">4 new</span>
+                                </div>
+                            </div>
+                            <div class="panel-body list-group list-group-contacts scroll" style="height: 200px;">
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-online"></div>
+                                    <img src="assets/images/users/user2.jpg" class="pull-left" alt="John Doe"/>
+                                    <span class="contacts-title">John Doe</span>
+                                    <p>Praesent placerat tellus id augue condimentum</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-away"></div>
+                                    <img src="assets/images/users/user.jpg" class="pull-left" alt="Dmitry Ivaniuk"/>
+                                    <span class="contacts-title">Dmitry Ivaniuk</span>
+                                    <p>Donec risus sapien, sagittis et magna quis</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-away"></div>
+                                    <img src="assets/images/users/user3.jpg" class="pull-left" alt="Nadia Ali"/>
+                                    <span class="contacts-title">Nadia Ali</span>
+                                    <p>Mauris vel eros ut nunc rhoncus cursus sed</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="list-group-status status-offline"></div>
+                                    <img src="assets/images/users/user6.jpg" class="pull-left" alt="Darth Vader"/>
+                                    <span class="contacts-title">Darth Vader</span>
+                                    <p>I want my money back!</p>
+                                </a>
+                            </div>     
+                            <div class="panel-footer text-center">
+                                <a href="pages-messages.html">Show all messages</a>
+                            </div>                            
+                        </div>                        
+                    </li>
+                    <!-- END MESSAGES -->
+                    <!-- TASKS -->
+                    <li class="xn-icon-button pull-right">
+                        <a href="#"><span class="fa fa-tasks"></span></a>
+                        <div class="informer informer-warning">3</div>
+                        <div class="panel panel-primary animated zoomIn xn-drop-left xn-panel-dragging">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><span class="fa fa-tasks"></span> Tasks</h3>                                
+                                <div class="pull-right">
+                                    <span class="label label-warning">3 active</span>
+                                </div>
+                            </div>
+                            <div class="panel-body list-group scroll" style="height: 200px;">                                
+                                <a class="list-group-item" href="#">
+                                    <strong>Phasellus augue arcu, elementum</strong>
+                                    <div class="progress progress-small progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div>
+                                    </div>
+                                    <small class="text-muted">John Doe, 25 Sep 2014 / 50%</small>
+                                </a>
+                                <a class="list-group-item" href="#">
+                                    <strong>Aenean ac cursus</strong>
+                                    <div class="progress progress-small progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">80%</div>
+                                    </div>
+                                    <small class="text-muted">Dmitry Ivaniuk, 24 Sep 2014 / 80%</small>
+                                </a>
+                                <a class="list-group-item" href="#">
+                                    <strong>Lorem ipsum dolor</strong>
+                                    <div class="progress progress-small progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>
+                                    </div>
+                                    <small class="text-muted">John Doe, 23 Sep 2014 / 95%</small>
+                                </a>
+                                <a class="list-group-item" href="#">
+                                    <strong>Cras suscipit ac quam at tincidunt.</strong>
+                                    <div class="progress progress-small">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                    </div>
+                                    <small class="text-muted">John Doe, 21 Sep 2014 /</small><small class="text-success"> Done</small>
+                                </a>                                
+                            </div>     
+                            <div class="panel-footer text-center">
+                                <a href="pages-tasks.html">Show all tasks</a>
+                            </div>                            
+                        </div>                        
+                    </li>
+                    <!-- END TASKS -->
+                </ul>
+                <!-- END X-NAVIGATION VERTICAL -->                     
+
+                <!-- START BREADCRUMB -->
+                <ul class="breadcrumb">
+                    <li><a href="#">首页</a></li>                    
+                    <li class="active">控制台</li>
+                </ul>
+                <!-- END BREADCRUMB -->                       
+                
+                <!-- PAGE CONTENT WRAPPER -->
+                <div class="page-content-wrap">
+                    
+                    <!-- START WIDGETS -->                    
+                    <div class="row">
+                        <div class="col-md-3">
+                            
+                            <!-- START WIDGET SLIDER -->
+                            <div class="widget widget-default widget-carousel">
+                                <div class="owl-carousel" id="owl-example">
+                                    <div>                                    
+                                        <div class="widget-title">新公告</div>             
+                                        <div class="widget-subtitle">Anounces</div>
+                                        <div class="widget-int">3,548</div>
+                                    </div>
+                                    <div>                                    
+                                        <div class="widget-title">任务总数</div>
+                                        <div class="widget-subtitle">Tasks</div>
+                                        <div class="widget-int">1,695</div>
+                                    </div>
+                                    <!-- <div>                                    
+                                        <div class="widget-title">New</div>
+                                        <div class="widget-subtitle">Visitors</div>
+                                        <div class="widget-int">1,977</div>
+                                    </div> -->
+                                </div>                            
+                                <div class="widget-controls">                                
+                                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="隐藏"><span class="fa fa-times"></span></a>
+                                </div>                             
+                            </div>         
+                            <!-- END WIDGET SLIDER -->
+                            
+                        </div>
+                        <div class="col-md-3">
+                            
+                            <!-- START WIDGET MESSAGES -->
+                            <div class="widget widget-default widget-item-icon" onclick="location.href='#';">
+                                <div class="widget-item-left">
+                                    <span class="fa fa-envelope"></span>
+                                </div>                             
+                                <div class="widget-data">
+                                    <div class="widget-int num-count">48</div>
+                                    <div class="widget-title">新消息</div>
+                                    <div class="widget-subtitle">New messages</div>
+                                </div>      
+                                <div class="widget-controls">                                
+                                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="隐藏"><span class="fa fa-times"></span></a>
+                                </div>
+                            </div>                            
+                            <!-- END WIDGET MESSAGES -->
+                            
+                        </div>
+                        <div class="col-md-3">
+                            
+                            <!-- START WIDGET REGISTRED -->
+                            <div class="widget widget-default widget-item-icon">
+                                <div class="widget-item-left">
+                                    <span class="fa fa-user"></span>
+                                </div>
+                                <div class="widget-data">
+                                    <div class="widget-int num-count">375</div>
+                                    <div class="widget-title">员工总数</div>
+                                    <div class="widget-subtitle">Worker</div>
+                                </div>
+                                <div class="widget-controls">                                
+                                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="隐藏"><span class="fa fa-times"></span></a>
+                                </div>                            
+                            </div>                            
+                            <!-- END WIDGET REGISTRED -->
+                            
+                        </div>
+                        <div class="col-md-3">
+                            
+                            <!-- START WIDGET CLOCK -->
+                            <div class="widget widget-default widget-padding-sm">
+                                <div class="widget-big-int plugin-clock">00:00</div>                            
+                                <div class="widget-subtitle plugin-date">Loading...</div>
+                                <div class="widget-controls">                                
+                                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="left" title="隐藏"><span class="fa fa-times"></span></a>
+                                </div>                            
+                                <div class="widget-buttons widget-c3">
+                                    <div class="col">
+                                        <a href="#"><span class="fa fa-clock-o"></span></a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#"><span class="fa fa-bell"></span></a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#"><span class="fa fa-calendar"></span></a>
+                                    </div>
+                                </div>                            
+                            </div>                        
+                            <!-- END WIDGET CLOCK -->
+                            
+                        </div>
+                    </div>
+                    <!-- END WIDGETS -->      
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- START PANEL WITH CONTROL CLASSES -->
+                            <div class="panel panel-warning">
+                                <div class="panel-heading text-center">
+                                    <a href="#" class="btn btn-success" id="come_btn">上班签到</a>
+                                    <a href="#" class="btn btn-warning">下班签退</a>
+                                    <a href="#" class="btn btn-danger" id="leave_btn">请假</a>
+                                </div>
+                                <form action="" method="POST" class="form-horizontal hidden" role="form" id="leave_form">
+                                    <div class="panel-body" style="height:266px;">
+                                        <div class="form-group">
+                                            <label class="col-md-2 col-xs-12 control-label">请假事由</label>
+                                            <div class="col-md-10 col-xs-12">                                            
+                                                <textarea class="form-control" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                    <div class="panel-footer">                                
+                                        <button class="btn btn-primary pull-right" id="leave_submit">提交</button>
+                                    </div>    
+                                </form>
+                                <form action="" method="POST" class="form-horizontal hidden" role="form" id="come_form">
+                                    <div class="panel-body" style="height:266px;">
+                                        <div class="form-group">
+                                            <label class="col-md-2 col-xs-12 control-label">签到心情</label>
+                                            <div class="col-md-10 col-xs-12">                                            
+                                                <textarea class="form-control" rows="5"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                    <div class="panel-footer">                                
+                                        <button class="btn btn-primary pull-right" id="come_submit">提交</button>
+                                    </div>    
+                                </form>                        
+                            </div>
+                            <!-- END PANEL WITH CONTROL CLASSES -->
+                        </div>
+                        <div class="col-md-6">
+                            <!-- TABS WIDGET -->
+                            <div class="panel panel-default tabs">
+                                <ul class="nav nav-tabs nav-justified">
+                                    <li class="active"><a href="#tab1" data-toggle="tab">公告</a></li>
+                                    <li><a href="#tab2" data-toggle="tab">留言板</a></li>
+                                </ul>
+                                <div class="panel-body tab-content">
+                                    <div class="tab-pane active scroll" id="tab1" style="height:300px;">
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                        <p>本系统将于2015-07-12发布V1.0.0版本</p>
+                                        <p>©2015 TKOA</p>
+                                    </div>
+                                    <div class="tab-pane clearfix" id="tab2">
+                                        <div class="scroll" style="height:300px;">
+                                            <div class="messages messages-img" id="message_div">
+                                                <div class="item in">
+                                                    <div class="image">
+                                                        <img src="assets/images/users/user2.jpg" alt="John Doe">
+                                                    </div>
+                                                    <div class="text">
+                                                        <div class="heading">
+                                                            <a href="#">超级管理员</a>
+                                                            <span class="date">上午08:33:17</span>
+                                                        </div>
+                                                        项目进度20%。
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="image">
+                                                        <img src="assets/images/users/user.jpg" alt="Dmitry Ivaniuk">
+                                                    </div>                                
+                                                    <div class="text">
+                                                        <div class="heading">
+                                                            <a href="#">黄经理</a>
+                                                            <span class="date">上午08:27:57</span>
+                                                        </div>                                    
+                                                        干巴爹。
+                                                    </div>
+                                                </div>
+                                                <div class="item in">
+                                                    <div class="image">
+                                                        <img src="assets/images/users/user2.jpg" alt="John Doe">
+                                                    </div>
+                                                    <div class="text">
+                                                        <div class="heading">
+                                                            <a href="#">超级管理员</a>
+                                                            <span class="date">上午08:25:10</span>
+                                                        </div>
+                                                        目前进度为10%，革命尚未成功。
+                                                    </div>
+                                                </div>                            
+                                            </div>  
+                                        </div>
+                                        <div class="input-group">                                    
+                                            <input type="text" class="form-control" placeholder="请您输入内容" id="message_input" />
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button" id="message_submit">发送</button>
+                                            </span>                                    
+                                        </div>  
+                                    </div>                       
+                                </div>
+                            </div>                        
+                            <!-- END TABS WIDGET -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- START SALES & EVENTS BLOCK -->
+                            <div class="panel panel-default panel-hidden-controls">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">考勤情况 <i class="fa fa-calendar" id="chart_calendar"></i></h3>
+                                    <ul class="panel-controls">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                    </ul>  
+                                </div>
+                                <div class="panel-body padding-0">
+                                    <div class="chart-holder" id="dashboard-line-1" style="height: 250px;"></div>
+                                </div>
+                            </div>
+                            <!-- END SALES & EVENTS BLOCK -->
+                        </div>
+
+                        <div class="col-md-6">
+                            <!-- NEWS WIDGET -->
+                            <div class="panel panel-default panel-hidden-controls">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">签到内容 <i class="fa fa-calendar" id="come_calendar"></i></h3>  
+                                    <ul class="panel-controls">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                        <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+                                    </ul> 
+                                </div>
+                                <div class="panel-body scroll" style="height: 250px;">                               
+                                    <h6><img alt="头像名字" src="assets/images/users/no-image.jpg" style="width:40px" class="sigh_avatar">&nbsp;&nbsp;方赞潘</h6>
+                                    <p>
+                                        不是每一瓶牛奶都叫特仑苏.
+                                        <span class="text-muted"><i class="fa fa-clock-o"></i> 14:15 2015-07-23</span>
+                                    </p>
+                                    <h6><img alt="头像名字" src="assets/images/users/no-image.jpg" style="width:40px" class="sigh_avatar">&nbsp;&nbsp;陈俊杰</h6>
+                                    <p>
+                                        写点什么吧.
+                                        <span class="text-muted"><i class="fa fa-clock-o"></i> 10:22 2015-07-23</span>
+                                    </p>
+                                    <h6><img alt="头像名字" src="assets/images/users/no-image.jpg" style="width:40px" class="sigh_avatar">&nbsp;&nbsp;潘嘉荣</h6>
+                                    <p>
+                                        席八！ 
+                                        <span class="text-muted"><i class="fa fa-clock-o"></i> 09:58 2015-07-23</span>
+                                    </p>                                   
+                                    <h6><img alt="头像名字" src="assets/images/users/no-image.jpg" style="width:40px" class="sigh_avatar">&nbsp;&nbsp;张泽权</h6>
+                                    <p>
+                                        OMG，输入多点字，看看效果显示如何先，嗯嗯，阿阿，雅蠛蝶咯《(^ . ^)》.OMG，输入多点字，看看效果显示如何先，嗯嗯，阿阿，雅蠛蝶咯《(^ . ^)》.OMG，输入多点字，看看效果显示如何先，嗯嗯，阿阿，雅蠛蝶咯《(^ . ^)》.OMG，输入多点字，看看效果显示如何先，嗯嗯，阿阿，雅蠛蝶咯《(^ . ^)》.
+                                        <span class="text-muted"><i class="fa fa-clock-o"></i> 06:33 2015-07-23</span>
+                                    </p>
+                                    <h6><img alt="头像名字" src="assets/images/users/no-image.jpg" style="width:40px" class="sigh_avatar">&nbsp;&nbsp;席慕蓉</h6>
+                                    <p>
+                                        阿~为什么会这样 
+                                        <span class="text-muted"><i class="fa fa-clock-o"></i> 09:44 2015-07-23</span>
+                                    </p> 
+                                    <h6><img alt="头像名字" src="assets/images/users/no-image.jpg" style="width:40px" class="sigh_avatar">&nbsp;&nbsp;卷帘大将</h6>
+                                    <p>
+                                        好想吃肉阿~ 
+                                        <span class="text-muted"><i class="fa fa-clock-o"></i> 09:22 2015-07-23</span>
+                                    </p>       
+                                    <h6><img alt="头像名字" src="assets/images/users/no-image.jpg" style="width:40px" class="sigh_avatar">&nbsp;&nbsp;仙灵儿</h6>
+                                    <p>
+                                        你在哪里？~ 
+                                        <span class="text-muted"><i class="fa fa-clock-o"></i> 08:22 2015-07-23</span>
+                                    </p>                                     
+                                </div>
+                            </div>
+                            <!-- END NEWS WIDGET -->
+                        </div>
+                            
+                    </div>
+						
+                    
+                </div>
+                <!-- END PAGE CONTENT WRAPPER -->                                
+            </div>            
+            <!-- END PAGE CONTENT -->
+        </div>
+        <!-- END PAGE CONTAINER -->
+
+        <!-- START PRELOADS -->
+        <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
+        <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
+        <!-- END PRELOADS -->                  
+        
+    <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>        
+        <!-- END PLUGINS -->
+
+        <!-- START THIS PAGE PLUGINS-->        
+        <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>        
+        <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+        <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
+        
+        <script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>
+        <script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>       
+        <script type="text/javascript" src="js/plugins/rickshaw/d3.v3.js"></script>
+        <script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js"></script>
+        <script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'></script>
+        <script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js'></script>                
+        <script type='text/javascript' src='js/plugins/bootstrap/bootstrap-datepicker.js'></script>                
+        <script type="text/javascript" src="js/plugins/owl/owl.carousel.min.js"></script>                 
+        
+        <script type="text/javascript" src="js/plugins/moment.min.js"></script>
+        <script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js"></script>
+        <!-- END THIS PAGE PLUGINS-->        
+
+        <!-- START TEMPLATE -->
+        <script type="text/javascript" src="js/settings.js"></script>
+        
+        <script type="text/javascript" src="js/plugins.js"></script>        
+        <script type="text/javascript" src="js/actions.js"></script>
+        
+        <script type="text/javascript" src="js/demo_dashboard.js"></script>
+        <!-- END TEMPLATE -->
+    <!-- END SCRIPTS -->     
+
+        <script type="text/javascript">
+
+            //打卡上班与请假
+            $("#come_btn").click(function(){
+                $("#come_form").removeClass('hidden');
+                $("#leave_form").addClass('hidden');
+            })
+            $("#leave_btn").click(function(){
+                $("#leave_form").removeClass('hidden');
+                $("#come_form").addClass('hidden');
+            })
+            $("#come_submit").click(function(){
+                alert("签到了！！！！准备form action跳转");
+            })
+            $("#leave_submit").click(function(){
+                alert("请假了！！！！准备form action跳转");
+            })
+
+            //留言板
+            $("#message_submit").click(function() {
+                var myDate = new Date();        
+                var myTime = myDate.toLocaleTimeString();
+                var message_input = $("#message_input").val();
+                var message_content = '<div class="item in item-visible"><div class="image"><img src="assets/images/users/user2.jpg" alt="John Doe"></div><div class="text"><div class="heading"><a href="#">超级管理员</a><span class="date">' + myTime + '</span></div>' + message_input + '</div></div>';
+                $("#message_div").prepend(message_content);
+            });
+
+            Morris.Line({
+                element: 'dashboard-line-1',
+                data: [
+                    { y: '2014-10-10', all: 4 , come: 2 },
+                    { y: '2014-10-11', all: 6 , come: 4 },
+                    { y: '2014-10-12', all: 10, come: 7 },
+                    { y: '2014-10-13', all: 7 , come: 5 },
+                    { y: '2014-10-14', all: 9 , come: 6 },
+                    { y: '2014-10-15', all: 12, come: 9 },
+                    { y: '2014-10-16', all: 20, come: 18},
+                    { y: '2014-10-17', all: 20, come: 20},
+                    { y: '2014-10-18', all: 32, come: 31},
+                    { y: '2014-10-19', all: 33, come: 28},
+                    { y: '2014-10-20', all: 28, come: 27},
+                    { y: '2014-10-21', all: 30, come: 29},
+                    { y: '2014-10-22', all: 35, come: 32},
+                    { y: '2014-10-23', all: 37, come: 35},
+                    { y: '2014-10-24', all: 37, come: 37},
+                    { y: '2014-10-25', all: 37, come: 36},
+                    { y: '2014-10-26', all: 40, come: 39},
+                    { y: '2014-10-27', all: 40, come: 35},
+                    { y: '2014-10-28', all: 40, come: 37},
+                    { y: '2014-10-29', all: 40, come: 30},
+                    { y: '2014-10-30', all: 41, come: 38},
+                    { y: '2014-10-31', all: 41, come: 39}
+                ],
+                xkey: 'y',
+                ykeys: ['come','all'],
+                labels: ['实到','应到'],
+                resize: true,
+                hideHover: true,
+                xLabels: 'day',
+                gridTextSize: '10px',
+                lineColors: ['#1caf9a','#33414E'],
+                gridLineColor: '#E5E5E5'
+            }); 
+
+            $("#come_calendar").datepicker({format: 'yyyy-mm-dd'});
+            $("#chart_calendar").datepicker({format: 'yyyy-mm-dd'});
+            
+        </script>    
+
+    </body>
+</html>
+
+
+
+
+
+
