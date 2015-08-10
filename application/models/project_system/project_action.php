@@ -4,7 +4,7 @@ if (! defined ( 'BASEPATH' ))
 
 /** 
 * 类说明 项目信息管理<br>
-* 作者名字 Sec<br>
+* 作者名字 panda<br>
 * 创建日期  2015-7-23<br>
 */
 class Project_action extends CI_Model
@@ -19,7 +19,7 @@ class Project_action extends CI_Model
     
     /** 
     * 函数功能说明 添加一个项目<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： project对象<br>
     * @return <br>
@@ -37,7 +37,7 @@ class Project_action extends CI_Model
     
     /** 
     * 函数功能说明 删除一个项目<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： id<br>
     * @return <br>
@@ -50,7 +50,7 @@ class Project_action extends CI_Model
     
     /** 
     * 函数功能说明 修改一个项目信息<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： project对象<br>
     * @return <br>
@@ -67,7 +67,7 @@ class Project_action extends CI_Model
     
     /** 
     * 函数功能说明 查询所有项目<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： <br>
     * @return <br>
@@ -80,7 +80,7 @@ class Project_action extends CI_Model
     
     /** 
     * 函数功能说明 根据名字查询项目<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： name<br>
     * @return <br>

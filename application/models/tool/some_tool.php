@@ -8,7 +8,7 @@ if (! defined ( 'BASEPATH' ))
  * @修改日期：
  * @修改说明：
  * @公司名称：深圳市穗鑫网络购物有限公司
- * @作者：Ro
+ * @作者：panda
  * @创建时间：2015-07-23 
  * @版本：V1.0
  */
@@ -28,7 +28,7 @@ class some_tool extends CI_Model
 
     /**
      *20150529
-     *作者：Ro
+     *作者：panda
      *同过键名key_name从数组array中匹配键值key_value返回该数组的值 
      */
     public function find_key_by_array($array,$key_name,$key_value)
@@ -98,10 +98,10 @@ class some_tool extends CI_Model
 
     /**
     * 20150528 1650
-    * author:Ro
+    * author:panda
     * update
     * 修改日期　20150609
-    * 修改人　Ro 
+    * 修改人　panda 
     * 修改内容　修改判断上传文件有效数逻辑
      */
     public function up_more_pic($destination_folder,$file_sum=1)

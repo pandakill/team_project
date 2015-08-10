@@ -1,8 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
- * 20150723
- * 作者：Ro
+ * 员工的controller文件
+ * @author panda <https://github.com/pandakill>
  */
 class Employee extends CI_Controller 
 {
@@ -54,7 +54,7 @@ class Employee extends CI_Controller
 
     /**
      * 函数功能说明 新增员工<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-24<br>
      */
     public function addEmployee()
@@ -116,7 +116,7 @@ class Employee extends CI_Controller
 
     /**
      * 函数功能说明 更新员工信息<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-24<br>
      */
     public function updateEmployee()
@@ -179,5 +179,5 @@ class Employee extends CI_Controller
 
 
 }
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file employee.php */
+/* Location: ./application/controllers/employee.php */

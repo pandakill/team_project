@@ -4,7 +4,7 @@ if (! defined ( 'BASEPATH' ))
 /**
  * @类功能说明：人员信息管理 <br>
  * @公司名称：穗鑫网络技术有限公司 <br>
- * @作者： Ro <br>
+ * @作者： panda <br>
  * @创建时间： 2015-07-23<br>
  * @类修改者： <br>
  * @修改日期： <br>
@@ -22,11 +22,11 @@ class employee_action extends CI_Model
 
     /**
      * 函数功能说明 判断工号存在性<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
-     * @参数：String wrokID 工号<br>
+     * @参数：String wpandakID 工号<br>
      * @return 如果存在，返回1，否则返回0<br>
      */
     public function checkWorkID($workID)
@@ -40,11 +40,11 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 登陆<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
-     * @参数： String wrokID 工号 <br>
+     * @参数： String wpandakID 工号 <br>
      *      String password 密码 <br>
      * @return i. 判断工号存在性，假如不存在，返回-1 <br>
      *         ii. 判断工号、密码是否匹配，是进行下一步，否则返回0 <br>
@@ -61,7 +61,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 新增员工<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -82,7 +82,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 通过ID获取员工对象<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -100,7 +100,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 通过员工ID获取员工对象<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -118,7 +118,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 通过部门ID获取员工列表<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -137,7 +137,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 通过员工的状态获取员工列表<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -155,7 +155,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 获取所有员工列表<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -170,7 +170,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 更新员工信息<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -191,7 +191,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 跟新员工状态<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -210,7 +210,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 更新员工部门<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -229,7 +229,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 新增应聘者<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -250,7 +250,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 通过ID获取应聘者<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -268,7 +268,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 通过状态获取应聘者列表<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -286,7 +286,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 获取应聘者列表<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -302,7 +302,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 跟新应聘者<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -322,7 +322,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 新增部门<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-22<br>
      * 
      * @参数：DepartmentForm <br>
@@ -342,7 +342,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 通过部门ID获取部门对象<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-22<br>
      * 
      * @参数： int id<br>
@@ -359,7 +359,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 更新部门信息<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-22<br>
      * 
      * @参数： DepartmentForm<br>
@@ -379,7 +379,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 删除部门<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-22<br>
      * 
      * @参数： int id 部门ID<br>
@@ -396,7 +396,7 @@ class employee_action extends CI_Model
     /**
      * 
      * 函数功能说明 获取所有部门信息<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-22<br>
      * 
      * @return List<Department><br>

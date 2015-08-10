@@ -1,9 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-/**
- * 20150724
- * 作者：Ro
- */
+    /**
+     * 人才你储备管理controller文件
+     * @author panda <https://github.com/pandakill>
+    */
 class Resume extends CI_Controller {
 
     public function __construct(){
@@ -26,6 +26,10 @@ class Resume extends CI_Controller {
         $this->display();
     }
 
+    /**
+     * @函数功能说明：打开view视图,将数据输出方法
+     * @创建人：panda 2015-7-23
+     */
     private function display()
     {
         $data['departments'] = $this->getDepartments();
@@ -98,6 +102,10 @@ class Resume extends CI_Controller {
         $this->display();
     }
 
+    /**
+     * @函数功能说明：将人才从简历中录取为员工
+     * @创建人：panda 2015-7-23
+     */
     public function updateResumeStatus2Department()
     {
         if(!$this->power_helper->checkLogin($this))
@@ -114,5 +122,5 @@ class Resume extends CI_Controller {
 
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file resume.php */
+/* Location: ./application/controllers/resume.php */

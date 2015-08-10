@@ -30,6 +30,10 @@ class Welcome extends CI_Controller {
         $this->load->model ( 'tool/power_helper' );
     } 
 
+    /**
+     * @函数功能说明：网站绑定欢迎页,如果无登录,则跳转至登陆页面,否则进入主页
+     * @创建人：panda 2015-7-23
+     */
     public function index()
 	{
 

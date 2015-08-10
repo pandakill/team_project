@@ -3,19 +3,8 @@
 class Clocking extends CI_Controller {
 
 	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
+	 * 考勤controller文件
+     * @author panda <https://github.com/pandakill>
 	 */
 	
     public function __construct(){
@@ -28,6 +17,10 @@ class Clocking extends CI_Controller {
         $this->load->model ( 'tool/power_helper' );
     } 
 
+    /**
+     * @函数功能说明：如果url重定向直接访问clocking,则返回登录页面
+     * @创建人：panda 2015-7-23
+     */
     public function index()
     {
         $this->load->view('login');
@@ -138,5 +131,5 @@ class Clocking extends CI_Controller {
 
 }
 
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */
+/* End of file clocking.php */
+/* Location: ./application/controllers/clocking.php */

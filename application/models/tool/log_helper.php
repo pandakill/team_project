@@ -3,7 +3,7 @@ if (! defined ( 'BASEPATH' ))
 	exit ( 'No fileect script access allowed' );
 /**
  * 20150624 1540
- * 作者：Ro
+ * 作者：panda
  */
 class log_helper extends CI_Model
 {

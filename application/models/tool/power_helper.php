@@ -3,7 +3,7 @@ if (! defined ( 'BASEPATH' ))
 	exit ( 'No fileect script access allowed' );
 /**
  * 20150723 1150
- * 作者：Ro
+ * 作者：panda
  */
 class power_helper extends CI_Model
 {

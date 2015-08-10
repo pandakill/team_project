@@ -1,5 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+    /**
+     * 个人信息的controller文件
+     * @author panda <htpps://github.com/pandakill>
+     */
 class Personal extends CI_Controller {
 
     public function __construct()
@@ -47,7 +51,7 @@ class Personal extends CI_Controller {
 
     /**
      * 函数功能说明 更新员工信息<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-24<br>
      */
     public function updateEmployee()

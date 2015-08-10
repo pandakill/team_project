@@ -3,7 +3,7 @@ if (! defined ( 'BASEPATH' ))
     exit ( 'No direct script access allowed' );
 /** 
 * 类说明 任务信息管理<br>
-* 作者名字 Sec<br>
+* 作者名字 panda<br>
 * 创建日期  2015-7-23<br>
 */
 class Mission_action extends CI_Model
@@ -19,7 +19,7 @@ class Mission_action extends CI_Model
 
     /** 
     * 函数功能说明 添加节点<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： 编辑者workID, mission对象<br>
     * @return <br>
@@ -36,7 +36,7 @@ class Mission_action extends CI_Model
     
     /** 
     * 函数功能说明 删除节点<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： 编辑者workID, missionID, projectID<br>
     * @return <br>
@@ -49,7 +49,7 @@ class Mission_action extends CI_Model
     
     /** 
     * 函数功能说明 更新节点<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： 编辑者workID, mission对象<br>
     * @return <br>
@@ -66,7 +66,7 @@ class Mission_action extends CI_Model
     
     /** 
     * 函数功能说明 获取一个项目中的所有节点<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： projectID<br>
     * @return <br>
@@ -80,7 +80,7 @@ class Mission_action extends CI_Model
     
     /** 
     * 函数功能说明 添加依赖关系<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： projectID, fromMissionID, toMissionID, 编辑者workID<br>
     * @return <br>
@@ -93,7 +93,7 @@ class Mission_action extends CI_Model
     
     /** 
     * 函数功能说明 删除依赖关系<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： projectID, fromMissionID, toMissionID, 编辑者workID<br>
     * @return <br>
@@ -106,7 +106,7 @@ class Mission_action extends CI_Model
     
     /** 
     * 函数功能说明 添加评价<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： missionID, projectID, evaluation评价, workID<br>
     * @return <br>
@@ -119,7 +119,7 @@ class Mission_action extends CI_Model
 
     /** 
     * 函数功能说明 获取现在要做的子任务<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： workId<br>
     * @return <br>
@@ -133,7 +133,7 @@ class Mission_action extends CI_Model
     
     /** 
     * 函数功能说明 获取将要做的子任务<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： workId<br>
     * @return <br>
@@ -147,7 +147,7 @@ class Mission_action extends CI_Model
     
     /** 
     * 函数功能说明 获取已经完成的子任务<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： workId<br>
     * @return <br>
@@ -161,7 +161,7 @@ class Mission_action extends CI_Model
     
     /** 
     * 函数功能说明 获取一个时间段内属于自己的任务<br>
-    * 作者名字 Sec<br>
+    * 作者名字 panda<br>
     * 创建日期  2015-7-23<br>
     * @参数： fromTime, toTime, workID<br>
     * @return <br>

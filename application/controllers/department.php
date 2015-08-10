@@ -1,5 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+/**
+ * 部门controller文件
+ * @author panda <https://github.com/pandakill>
+ */
+
 class Department extends CI_Controller {
 
 	
@@ -24,6 +29,10 @@ class Department extends CI_Controller {
         $this->display();
 	}
 
+    /*
+     * @函数功能说明：打印方法,将数据输出到views视图中
+     * @创建人：panda 2015-7-24
+     */
     private function display()
     {
         $data['departments'] = $this->getDepartments();

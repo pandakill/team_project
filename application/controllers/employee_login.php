@@ -1,9 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-/**
- * 20150723
- * 作者：Ro
- */
+    /**
+     * 员工登陆的controller文件
+     * @author panda <https://github.com/pandakill>
+     */
 class employee_login extends CI_Controller 
 {
 
@@ -26,7 +26,7 @@ class employee_login extends CI_Controller
 
     /**
      * 函数功能说明 判断工号存在性<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
@@ -42,7 +42,7 @@ class employee_login extends CI_Controller
     /**
      * 
      * 函数功能说明 登陆<br>
-     * 作者名字 RO<br>
+     * 作者名字 panda<br>
      * 创建日期 2015-7-21<br>
      * 修改日期 2015-7-23<br>
      * 
